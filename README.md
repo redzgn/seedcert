@@ -103,7 +103,7 @@ copies of the sibling `certiforget` package. There is no runtime dependency on
 
 ## License
 
-MIT. See `LICENSE`.
+MIT. 
 # seedcert
 
 **Statistical certification that a graph neural network re-implementation
