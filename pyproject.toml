@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "seedcert"
+version = "0.1.0"
+description = "Statistical certification that a GNN re-implementation reproduces a published result"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "seedcert authors" }]
+keywords = ["reproducibility", "graph-neural-networks", "certification", "significance-testing"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.1",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "torch>=2.1",
+    "torch-geometric>=2.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+paper = [
+    "matplotlib>=3.6",
+]
+
+[project.scripts]
+seedcert-build-runs = "seedcert.cache.build:main"
+seedcert-certify = "seedcert.experiment.run_reproduction:main"
+seedcert-timing = "seedcert.experiment.timing_pilot:main"
+seedcert-manifest = "seedcert.data.manifest:main"
+seedcert-smoke = "seedcert.experiment.smoke:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/seedcert"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+xfail_strict = true
+python_classes = ["Check*"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
+files = ["src/seedcert"]
