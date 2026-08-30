@@ -1,0 +1,67 @@
+{
+  "_comment": "Populated by `seedcert-manifest` (WP1). sha256 pins the canonical graph tensors; split_protocol is the published split each claim is matched against. Regenerate with `python -m seedcert.data.manifest`.",
+  "generated_manifest_path": "generated_manifest.json",
+  "generated_manifest_sha256": "bda06005a4f2d891fb1b65c57703739e87fc6cd373a4b9240195e095200c3833",
+  "datasets": {
+    "Cora": {
+      "split_protocol": "planetoid-public",
+      "sha256": "270a9fd05dfdae4aa9b6014a765bc2e7e3cf29c2929e9f68be01dad421e3d6ba",
+      "num_classes": 7
+    },
+    "CiteSeer": {
+      "split_protocol": "planetoid-public",
+      "sha256": "b563b8e57165305ac04f850166ec38b3702316760be02ae9b7af7351d4ab9ce0",
+      "num_classes": 6
+    },
+    "PubMed": {
+      "split_protocol": "planetoid-public",
+      "sha256": "4967773db4b446364ec09d76881267b6b6a2a8adae46eb3301b8d277c42e2d15",
+      "num_classes": 3
+    },
+    "Actor": {
+      "split_protocol": "geom-gcn-split0",
+      "sha256": "7529c8c92a740b64d16d486ae82c97b3688da5315d7183d7b9c14b40afa99e76",
+      "num_classes": 5
+    },
+    "Chameleon": {
+      "split_protocol": "geom-gcn-split0",
+      "sha256": "91c73053e8b4e2d0b58cf5b6967243c295764f905dab501478865698e9c25e7c",
+      "num_classes": 5
+    },
+    "Squirrel": {
+      "split_protocol": "geom-gcn-split0",
+      "sha256": "21eaf9dd567c72595c252ddfff362c5a1c29ec01a60f8793e6ac240681c09a5b",
+      "num_classes": 5
+    },
+    "Roman-Empire": {
+      "split_protocol": "heterophilous-split0",
+      "sha256": "3582bb916b31969092b332bda1be5e1a3caabc42988659781deedd4736a52dc9",
+      "num_classes": 18
+    },
+    "Amazon-Ratings": {
+      "split_protocol": "heterophilous-split0",
+      "sha256": "9d69db5cf7d2b25e42397d1a9ea11e2efd3938dc406f447d359d7ff0307eb962",
+      "num_classes": 5
+    },
+    "Minesweeper": {
+      "split_protocol": "heterophilous-split0",
+      "sha256": "561ac7dfd3f4875bdea011ff197e22835d14440cbe33046f3e60e5d69a6bb671",
+      "num_classes": 2
+    },
+    "Tolokers": {
+      "split_protocol": "heterophilous-split0",
+      "sha256": "ccfc4b7e02b376ee06de96910d773f58df4ed3b26c80ead08b96d76f86621936",
+      "num_classes": 2
+    },
+    "Questions": {
+      "split_protocol": "heterophilous-split0",
+      "sha256": "479b18efd5d4b39344a16e9e64b9d8d6283ea55cb8ff43acbad58fd85685da0f",
+      "num_classes": 2
+    },
+    "WikiCS": {
+      "split_protocol": "wikics-split0",
+      "sha256": "c25509783d9d9e594d8ac3afed0d80c82e166137d543cac23aaa8504b38af969",
+      "num_classes": 10
+    }
+  }
+}
