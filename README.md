@@ -203,9 +203,7 @@ result separately so the two questions are not conflated.
 
 ## Documentation
 
-`DESIGN.md` is the method of record; `PROVENANCE.md` lists which modules began as
-copies of the sibling `certiforget` package. There is no runtime dependency on
-`certiforget`.
+`DESIGN.md` is the method of record.
 
 ## License
 
