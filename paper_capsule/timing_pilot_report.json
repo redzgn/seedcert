@@ -1,0 +1,14 @@
+{
+  "seconds_per_run": {
+    "Cora": 0.21831849155326685,
+    "PubMed": 1.5313486753342052
+  },
+  "graph_size": {
+    "Cora": 13264,
+    "PubMed": 108365
+  },
+  "fit_intercept": 0.035186533343885606,
+  "fit_slope_per_elem": 1.3806691662347803e-05,
+  "projected_sweep_runs": 300,
+  "projected_sweep_hours": 0.05434679678572231
+}
